@@ -2,8 +2,32 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <Description>A simple WinForms app with top most set to true. Makes it easy to read busy
+websites that show too many ads or videos on the right or left of a screen.</Description>
+    <PackageProjectUrl>https://github.com/DataJuggler/AdCover</PackageProjectUrl>
+    <PackageIcon>Cover.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/DataJuggler/AdCover</RepositoryUrl>
+    <PackageTags>WinForms;C#;</PackageTags>
+    <PackageReleaseNotes>Updated to .NET 7.</PackageReleaseNotes>
+    <ApplicationIcon>Cover.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Cover.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="AdCover\Cover.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
